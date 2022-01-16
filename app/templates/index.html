@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Campeonato</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h2>Semifinal</h2>
+            <input type="text" id=valor>
+            <input type="submit" onclick="capturar()" value="vencedor"><br>
+            <br><br>
+            <input type="text" id=valor1>
+            <input type="submit" onclick="capturar1()" value="vencedor"><br>
+            <br><br>
+            <input type="text" id=valor2>
+            <input type="submit" onclick="capturar2()" value="vencedor"><br>
+            <br><br>
+            <input type="text" id=valor3>
+            <input type="submit" onclick="capturar3()" value="vencedor"><br>
+            <br><br>
+
+
+            
+            <h2>Times vencedores</h2>
+            <p id="valorDigitado"></p><br>
+            <p id="valorDigitado1"></p><br>
+            <p id="valorDigitado2"></p><br>
+            <p id="valorDigitado3"></p><br>
+            <hr><br>
+
+            <h2>Final</h2>
+            <input type="text" id=valor4>
+            <input type="submit" onclick="capturar4()" value="vencedor"><br>
+            <br><br>
+            <input type="text" id=valor5>
+            <input type="submit" onclick="capturar5()" value="vencedor"><br>
+
+            <h2>Time campeão</h2>
+            <p id="valorDigitado4"></p><br>
+            <p id="valorDigitado5"></p><br>
+
+    <script type="text/javascript">
+
+ var capturando = "";
+function capturar () {
+    capturando = document.getElementById('valor').value;
+    document.getElementById('valorDigitado').innerHTML = capturando;
+}
+
+var capturando1 = "";
+function capturar1 () {
+    capturando1 = document.getElementById('valor1').value;
+    document.getElementById('valorDigitado1').innerHTML = capturando1;
+}
+
+var capturando2 = "";
+function capturar2 () {
+    capturando2 = document.getElementById('valor2').value;
+    document.getElementById('valorDigitado2').innerHTML = capturando2;
+}
+
+var capturando3 = "";
+function capturar3 () {
+    capturando3 = document.getElementById('valor3').value;
+    document.getElementById('valorDigitado3').innerHTML = capturando3;
+}
+
+var capturando4 = "";
+function capturar4 () {
+    capturando4 = document.getElementById('valor4').value;
+    document.getElementById('valorDigitado4').innerHTML = capturando4;
+}
+
+var capturando3 = "";
+function capturar5 () {
+    capturando5 = document.getElementById('valor5').value;
+    document.getElementById('valorDigitado5').innerHTML = capturando5;
+}
+    </script>
+
+
+    </body>
+</html>
